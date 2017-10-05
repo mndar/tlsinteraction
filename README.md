@@ -13,9 +13,16 @@ Prepare two GTLSCertificate *:
 
 
 #include "surveillance-tls-interaction.h"
+
 ...
+
 ...
+
 SurveillanceTlsInteraction *interaction = surveillance_tls_interaction_new (my_tls_cert, ca_tls_cert);
+
 g_object_set (rtspclientsink, "tls-interaction", interaction, NULL);
+
 ...
+
 ...
+
